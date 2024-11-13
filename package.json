@@ -1,0 +1,26 @@
+{
+  "name": "paralect-app",
+  "version": "0.1.0",
+  "description": "Paralect app is a full-stack React.js + Node.js (NestJS) application for managing job responses",
+  "main": "main.ts",
+  "scripts": {
+    "client": "cross-env NODE_ENV=development npm --prefix client run start",
+    "server": "cross-env NODE_ENV=development npm --prefix paralect-server run start:dev",
+    "client:build": "npm --prefix client run build",
+    "server:build": "npm --prefix paralect-server run build",
+    "client:install": "cd client && npm install",
+    "server:install": "cd paralect-server && npm install",
+    "root:install": "npm install",
+    "install:modules": "npm run client:install && npm run server:install && npm run root:install",
+    "development": "cross-env NODE_ENV=development concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "Deguz",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

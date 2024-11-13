@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#webpack-dev-server-client-overlay {
+  display: none !important
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #000;
+
+  &:disabled {
+    border: 1px solid #ccc;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
