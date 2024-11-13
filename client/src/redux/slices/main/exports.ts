@@ -4,8 +4,9 @@ import { mainSlice } from './mainSlice';
 
 // setters
 export const {
-  actions: { setServerReadyState },
+  actions: { setServerReadyState, setReplies },
 } = mainSlice;
 
 // getters
 export const getServerReadyState = ({ main: { serverReadyState } }: RootState) => serverReadyState;
+export const getReplies = ({ main: { replies } }: RootState) => replies;

@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.MainPage {
+  width: 100%;
+  height: 100vh;
+  @include flex-column-line-start-vertical-top;
+  @include text-adaptation;
+  background-color: $background-color-light;
+}
