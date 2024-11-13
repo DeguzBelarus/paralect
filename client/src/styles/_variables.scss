@@ -1,4 +1,4 @@
-@import "./media-queries";
+@use "./media-queries" as *;
 
 // colors
 $main-theme-color: crimson;

@@ -1,5 +1,6 @@
 import { Options as FileLoaderOptions } from 'file-loader';
 import { Options as SWCLoaderOptions } from '@swc/core';
+import { Options as SassOptions } from 'sass-loader';
 
 export const FILE_LOADER_OPTIONS: FileLoaderOptions = {
   outputPath: 'media',
@@ -38,6 +39,18 @@ export const SWC_LOADER_OPTIONS = (isDevelopment: boolean, isTsx: boolean): SWCL
     isModule: true,
   };
 };
+
+type SassApiType = 'legacy' | 'modern' | 'modern-compiler';
+export const SASS_LOADER_OPTIONS = (
+  isDevelopment: boolean,
+): SassOptions & Record<'api', SassApiType> => ({
+  api: 'modern-compiler',
+  sassOptions: {
+    sourceMap: isDevelopment,
+    outputStyle: 'compressed',
+  },
+});
+
 export const CSS_LOADER_OPTIONS = (isDevelopment: boolean) => ({
   modules: {
     localIdentName: isDevelopment ? '[path][name]__[local]' : '[hash:base64:8]',
