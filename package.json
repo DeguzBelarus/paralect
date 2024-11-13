@@ -1,7 +1,7 @@
 {
   "name": "paralect-app",
   "version": "0.1.0",
-  "description": "Paralect app is a full-stack React.js + Node.js (NestJS) application for managing job responses",
+  "description": "Paralect app is a full-stack React.js + Node.js (NestJS) application for managing job replies",
   "main": "main.ts",
   "scripts": {
     "client": "cross-env NODE_ENV=development npm --prefix client run start",
