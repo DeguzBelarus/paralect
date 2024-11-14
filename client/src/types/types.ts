@@ -6,6 +6,7 @@ export type VoidMethod = () => void;
 export type ReactChildrenType = ReactNode | Array<ReactNode>;
 export type ReplyStatusType = 'accepted' | 'refused' | 'waiting';
 export type SeverityType = 'positive' | 'negative' | 'neutral';
+export type ReplyDataInputType = 'status' | 'company' | 'position' | 'salaryFork' | 'note';
 
 export interface ISystemMessageData {
   message: string;

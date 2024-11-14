@@ -6,5 +6,8 @@ export interface IMainState {
   replies: Array<IReply>;
   systemMessage: ISystemMessageData;
   currentlyEditingReply: Nullable<IReply>;
+  newReplyData: IReply;
   isModalWindowOpenedForCreation: boolean;
+  isNewReplyStatusSelected: boolean;
+  validationErrorMessage: string;
 }

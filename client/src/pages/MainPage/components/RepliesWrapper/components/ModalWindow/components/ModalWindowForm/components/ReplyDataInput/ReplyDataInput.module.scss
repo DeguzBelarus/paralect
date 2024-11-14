@@ -1,0 +1,31 @@
+@use "../../../../../../../../../../styles/"as *;
+
+.ReplyDataInput {
+  @include flex-column-all-center;
+  gap: 5px;
+
+  span {
+    @include user-select-none;
+  }
+
+  input,
+  textarea,
+  select {
+    @include styled-input;
+  }
+
+  input,
+  select {
+    height: 40px;
+  }
+
+  textarea {
+    height: 60px;
+  }
+
+  select {
+    @include hover-cursor-pointer;
+    text-align-last: center;
+    text-align: center;
+  }
+}

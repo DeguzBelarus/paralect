@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { useModalWindow } from 'hooks/useModalWindow';
+import { useModalWindow } from 'pages/MainPage/components/RepliesWrapper/components/ModalWindow/hooks/useModalWindow';
 import styles from './OpenModalForCreationButton.module.scss';
 
 export const OpenModalForCreationButton: FC = () => {

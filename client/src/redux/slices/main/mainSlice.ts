@@ -27,6 +27,15 @@ export const mainSlice = createSlice({
     setCurrentlyEditingReply(state: IMainState, { payload }: PayloadAction<Nullable<IReply>>) {
       state.currentlyEditingReply = payload;
     },
+    setNewReplyData(state: IMainState, { payload }: PayloadAction<Nullable<IReply>>) {
+      state.newReplyData = payload;
+    },
+    setIsNewReplyStatusSelected(state: IMainState, { payload }: PayloadAction<boolean>) {
+      state.isNewReplyStatusSelected = payload;
+    },
+    setValidationErrorMessage(state: IMainState, { payload }: PayloadAction<string>) {
+      state.validationErrorMessage = payload;
+    },
   },
   extraReducers(builder) {
     builder

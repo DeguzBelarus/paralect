@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 
-import { useModalWindow } from 'hooks/useModalWindow';
+import { useModalWindow } from 'pages/MainPage/components/RepliesWrapper/components/ModalWindow/hooks/useModalWindow';
 import { ModalWindowUpperContainer } from './components/ModalWindowUpperContainer/ModalWindowUpperContainer';
 import { ModalWindowForm } from './components/ModalWindowForm/ModalWindowForm';
 import styles from './ModalWindow.module.scss';

@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 
-import { useModalWindow } from 'hooks/useModalWindow';
+import { useModalWindow } from 'pages/MainPage/components/RepliesWrapper/components/ModalWindow/hooks/useModalWindow';
 import styles from './CloseModalWindowButton.module.scss';
 
 export const CloseModalWindowButton: FC = memo(() => {

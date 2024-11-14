@@ -1,0 +1,11 @@
+@use "../../../../../../../../../../styles/"as *;
+
+.ValidationInfo {
+  width: 100%;
+  min-height: 40px;
+  @include flex-all-center;
+
+  P {
+    width: 100%;
+  }
+}

@@ -9,6 +9,9 @@ export const {
     setReplies,
     setCurrentlyEditingReply,
     setIsModalWindowOpenedForCreation,
+    setNewReplyData,
+    setIsNewReplyStatusSelected,
+    setValidationErrorMessage,
   },
 } = mainSlice;
 
@@ -16,8 +19,13 @@ export const {
 export const getRequestStatus = ({ main: { requestStatus } }: RootState) => requestStatus;
 export const getReplies = ({ main: { replies } }: RootState) => replies;
 export const getSystemMessage = ({ main: { systemMessage } }: RootState) => systemMessage;
-export const getCurrentlyEditingReply = ({ main: { currentlyEditingReply } }: RootState) =>
-  currentlyEditingReply;
 export const getIsModalWindowOpenedForCreation = ({
   main: { isModalWindowOpenedForCreation },
 }: RootState) => isModalWindowOpenedForCreation;
+export const getCurrentlyEditingReply = ({ main: { currentlyEditingReply } }: RootState) =>
+  currentlyEditingReply;
+export const getNewReplyData = ({ main: { newReplyData } }: RootState) => newReplyData;
+export const getIsNewReplyStatusSelected = ({ main: { isNewReplyStatusSelected } }: RootState) =>
+  isNewReplyStatusSelected;
+export const getValidationErrorMessage = ({ main: { validationErrorMessage } }: RootState) =>
+  validationErrorMessage;
