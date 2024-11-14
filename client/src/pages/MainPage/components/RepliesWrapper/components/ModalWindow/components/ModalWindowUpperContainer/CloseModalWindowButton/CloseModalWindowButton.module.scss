@@ -1,0 +1,18 @@
+@use "../../../../../../../../../styles/"as *;
+
+.CloseModalWindowButton {
+  @include flex-all-center;
+  @include hover-cursor-pointer;
+
+  & {
+    @include user-select-none;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    // border: 2px solid $main-theme-color;
+  }
+
+  h2 {
+    color: $accents-theme-color;
+  }
+}

@@ -1,16 +1,18 @@
-@use "./media-queries" as *;
+@use "./media-queries"as *;
 
 // colors
-$main-theme-color: crimson;
-$accents-theme-color: #003153;
-$background-color-light: #fffafa;
-$text-color: #090909;
+$main-theme-color: silver;
+$accents-theme-color: #fff500;
+$background-color: #121212;
+$text-color: #eee;
 $secondary-text-color: #555;
+
+// sizes
+$replies-wrapper-border-radius: 2px solid $main-theme-color;
 
 // system message colors
 $positive-color: #32cd32;
 $negative-color:#ff4d00;
-$authorization-page-background: #fff;
 
 // mixins
 @mixin hover {

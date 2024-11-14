@@ -34,3 +34,4 @@ export enum GSAPEasingEnum {
 }
 
 export const ZERO_GSAP_DURATION = 0;
+export const LADER_APPEARING_DURATION = 0.5;

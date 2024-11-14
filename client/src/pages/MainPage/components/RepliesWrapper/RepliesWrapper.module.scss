@@ -1,0 +1,14 @@
+@use "../../../../styles/"as *;
+
+.RepliesWrapper {
+  width: 70%;
+  height: 100%;
+  @include flex-column-line-center-vertical-top;
+  gap: 8px;
+  position: relative;
+  border: $replies-wrapper-border-radius;
+  box-shadow: 0 0 2px 1px $main-theme-color;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}

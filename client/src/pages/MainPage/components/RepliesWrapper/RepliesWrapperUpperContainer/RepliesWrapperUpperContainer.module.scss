@@ -1,0 +1,13 @@
+@use "../../../../../styles/"as *;
+
+.RepliesWrapperUpperContainer {
+  width: 100%;
+  height: 60px;
+  @include flex-line-spacebetween-vertical-center;
+  border-bottom: 2px solid $main-theme-color;
+  padding-inline: 10px;
+
+  h1 {
+    @include user-select-none;
+  }
+}

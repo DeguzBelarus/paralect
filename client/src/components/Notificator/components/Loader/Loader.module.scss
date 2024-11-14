@@ -1,0 +1,9 @@
+@use "../../../../styles/"as *;
+
+.Loader {
+  opacity: 0;
+
+  img {
+    height: 30px;
+  }
+}

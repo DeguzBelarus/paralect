@@ -1,0 +1,10 @@
+@use "../../../../styles/"as *;
+
+.ParalectLogo {
+  @include flex-all-center;
+  @include user-select-none;
+
+  img {
+    height: 30px;
+  }
+}

@@ -1,3 +1,5 @@
+import { IReply, ReplyStatusType } from 'types/types';
+
 // responses
 export interface IGeneralResponse {
   message: string;
@@ -6,6 +8,30 @@ export interface IGeneralResponse {
   issueTime?: string;
 }
 
-export interface IServerReadyStateCheckResponse extends IGeneralResponse {
-  readyState?: 'ready';
+export interface IGeneralUpdateAndDeleteRequest {
+  _id: string;
+}
+
+export interface IRepliesResponseData extends IGeneralResponse {
+  data: Array<IReply>;
+}
+
+export class CreateReplyDto implements IReply {
+  status: ReplyStatusType;
+  company: string;
+  position: string;
+  salaryFork: number;
+  note?: string;
+}
+
+export class UpdateReplyDto implements IReply {
+  status: ReplyStatusType;
+  company: string;
+  position: string;
+  salaryFork: number;
+  note?: string;
+}
+
+export interface IUpdateOneReplyRequestData extends IGeneralUpdateAndDeleteRequest {
+  dto: UpdateReplyDto;
 }

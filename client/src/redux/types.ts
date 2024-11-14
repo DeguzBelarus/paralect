@@ -1,6 +1,5 @@
 // redux types
 export type RequestStatusType = 'idle' | 'loading' | 'failed';
-export type ServerReadyState = 'unknown' | 'ready' | 'awakening';
 
 // redux enums
 export enum RequestRESTMethodsEnum {

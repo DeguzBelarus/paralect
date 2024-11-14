@@ -1,7 +1,14 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 
+import { ParalectLogo } from './components/ParalectLogo/ParalectLogo';
+import { RepliesWrapper } from './components/RepliesWrapper/RepliesWrapper';
 import styles from './MainPage.module.scss';
 
-export const MainPage: FC = () => {
-  return <div className={styles.MainPage}>Paralect</div>;
-};
+export const MainPage: FC = memo(() => {
+  return (
+    <main className={styles.MainPage}>
+      <ParalectLogo />
+      <RepliesWrapper />
+    </main>
+  );
+});

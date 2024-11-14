@@ -1,7 +1,10 @@
-import { ServerReadyState } from 'redux/types';
-import { IReply } from 'types/types';
+import { RequestStatusType } from 'redux/types';
+import { IReply, ISystemMessageData, Nullable } from 'types/types';
 
 export interface IMainState {
-  serverReadyState: ServerReadyState;
+  requestStatus: RequestStatusType;
   replies: Array<IReply>;
+  systemMessage: ISystemMessageData;
+  currentlyEditingReply: Nullable<IReply>;
+  isModalWindowOpenedForCreation: boolean;
 }
