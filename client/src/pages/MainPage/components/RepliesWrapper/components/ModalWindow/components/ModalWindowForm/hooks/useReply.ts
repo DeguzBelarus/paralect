@@ -19,7 +19,7 @@ export const useReply = (type: ReplyDataInputType) => {
   const replyDataInputValue = currentlyEditingReply
     ? currentlyEditingReply[type]
     : newReplyData[type];
-  const replyDataInputValueForSelect = currentlyEditingReply ? replyDataInputValue : undefined;
+  const replyDataInputValueForSelect = currentlyEditingReply ? replyDataInputValue : '';
   const replyStatusesArray: Array<ReplyStatusType> = ['accepted', 'refused', 'waiting'];
 
   const replyDataStateUpdate = (event: ChangeEvent<HTMLInputElement>) => {

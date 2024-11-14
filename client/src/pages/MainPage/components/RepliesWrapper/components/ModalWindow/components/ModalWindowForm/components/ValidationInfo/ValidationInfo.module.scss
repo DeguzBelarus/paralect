@@ -2,10 +2,13 @@
 
 .ValidationInfo {
   width: 100%;
-  min-height: 40px;
+  min-height: 30px;
   @include flex-all-center;
 
   P {
     width: 100%;
+    @include user-select-none;
+    text-align: center;
+    color: $negative-color;
   }
 }

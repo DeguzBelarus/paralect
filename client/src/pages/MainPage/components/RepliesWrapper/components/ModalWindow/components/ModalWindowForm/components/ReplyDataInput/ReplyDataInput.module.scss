@@ -1,11 +1,13 @@
 @use "../../../../../../../../../../styles/"as *;
 
 .ReplyDataInput {
+  width: 100%;
   @include flex-column-all-center;
   gap: 5px;
 
   span {
     @include user-select-none;
+    font-size: 14px;
   }
 
   input,
@@ -21,11 +23,15 @@
 
   textarea {
     height: 60px;
+    @include scroll;
   }
 
   select {
     @include hover-cursor-pointer;
-    text-align-last: center;
-    text-align: center;
+
+    & {
+      text-align-last: center;
+      text-align: center;
+    }
   }
 }

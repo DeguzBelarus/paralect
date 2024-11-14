@@ -36,7 +36,7 @@ export const ReplyDataInput: FC<Props> = ({ type }) => {
       )}
       {isSalaryForkInput && (
         <>
-          <span>Specify the salary fork in dollars:</span>
+          <span>Your salary fork (in dollars):</span>
           <input
             type="number"
             name={type}
@@ -59,7 +59,7 @@ export const ReplyDataInput: FC<Props> = ({ type }) => {
           onChange={replyDataStateUpdateForSelect}
           defaultValue={replyDataInputValueForSelect}
         >
-          <option disabled selected>
+          <option disabled value="">
             -- select the reply status --
           </option>
           {replyStatusesArray.map((replyStatus, index) => {

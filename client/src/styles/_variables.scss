@@ -205,7 +205,6 @@ $negative-color:#ff4d00;
 
 @mixin styled-input {
   width: 100%;
-  min-width: 300px;
   height: 100%;
   border: 1px solid $accents-theme-color;
   border-radius: 3px;

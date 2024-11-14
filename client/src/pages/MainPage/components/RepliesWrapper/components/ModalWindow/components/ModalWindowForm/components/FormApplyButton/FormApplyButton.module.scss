@@ -1,0 +1,18 @@
+@use "../../../../../../../../../../styles/"as *;
+
+.FormApplyButton {
+  @include flex-all-center;
+  @include user-select-none;
+  background-color: $background-color;
+  color: $text-color;
+  border: 1px solid $accents-theme-color;
+  border-radius: 8px;
+  padding: 10px 50px;
+  cursor: pointer;
+
+  &:disabled {
+    color: $secondary-text-color;
+    border: 1px solid $secondary-text-color;
+    cursor: default;
+  }
+}

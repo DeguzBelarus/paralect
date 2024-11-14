@@ -11,4 +11,8 @@
   border-radius: 10px;
   margin: 0 auto;
   overflow: hidden;
+
+  @include media-mobile-big-maximum-767 {
+    width: 95%;
+  }
 }

@@ -1,8 +1,12 @@
 @use "../.././../../../../../../styles/"as *;
 
 .ModalWindowForm {
-  width: 100%;
+  max-width: 340px;
   height: 100%;
   @include flex-column-all-center;
-  gap: 10px;
+  @include text-adaptation;
+
+  & {
+    gap: 10px;
+  }
 }

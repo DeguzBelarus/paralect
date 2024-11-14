@@ -3,12 +3,12 @@
 .ModalWindow {
   width: 100%;
   height: 100%;
-  @include flex-column-line-start-vertical-top;
+  @include flex-column-all-center;
   position: absolute;
   z-index: 1;
 
   & {
-    background-color: rgba($color: $background-color, $alpha: 0.99);
+    background-color: rgba($color: $background-color, $alpha: 0.95);
     color: $text-color;
   }
 }
