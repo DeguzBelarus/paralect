@@ -8,7 +8,7 @@
   z-index: 1;
 
   & {
-    background-color: $background-color;
+    background-color: rgba($color: $background-color, $alpha: 0.99);
     color: $text-color;
   }
 }

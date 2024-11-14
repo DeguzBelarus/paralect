@@ -2,6 +2,7 @@ import { FC, memo } from 'react';
 
 import { useModalWindow } from 'hooks/useModalWindow';
 import { ModalWindowUpperContainer } from './components/ModalWindowUpperContainer/ModalWindowUpperContainer';
+import { ModalWindowForm } from './components/ModalWindowForm/ModalWindowForm';
 import styles from './ModalWindow.module.scss';
 
 export const ModalWindow: FC = memo(() => {
@@ -10,6 +11,7 @@ export const ModalWindow: FC = memo(() => {
   return (
     <div className={styles.ModalWindow}>
       <ModalWindowUpperContainer isModalInEditingMode={isModalInEditingMode} />
+      <ModalWindowForm />
     </div>
   );
 });
