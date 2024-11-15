@@ -2,9 +2,10 @@
 
 .DeleteReplyButton {
   @include flex-all-center;
+  @include hover-cursor-pointer;
+  @include user-select-none;
   position: absolute;
   right: 0;
-  @include hover-cursor-pointer;
 
   & {
     padding: 5px 10px;
