@@ -2,7 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { MAIN_SLICE_INITIAL_STATE } from './initialState';
 import { IMainState } from './types';
-import { IReply, ISystemMessageData, Nullable } from 'types/types';
+import { IReply, Nullable } from 'types/types';
 import {
   createOneReplyAsync,
   deleteOneReplyAsync,
@@ -17,9 +17,6 @@ export const mainSlice = createSlice({
   reducers: {
     setReplies(state: IMainState, { payload }: PayloadAction<Array<IReply>>) {
       state.replies = payload;
-    },
-    setSystemMessage(state: IMainState, { payload }: PayloadAction<ISystemMessageData>) {
-      state.systemMessage = payload;
     },
     setIsModalWindowOpenedForCreation(state: IMainState, { payload }: PayloadAction<boolean>) {
       state.isModalWindowOpenedForCreation = payload;

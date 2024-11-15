@@ -1,6 +1,5 @@
-import { ILocalStorageData, Nullable, Undefinable } from 'types/types';
+import { Undefinable } from 'types/types';
 import { RequestRESTMethodsEnum } from './types';
-import { LOCAL_STORAGE_SAVE_NAME } from 'constants/constants';
 
 export const universalFetch = (
   url: string,
@@ -27,39 +26,4 @@ export const universalFetch = (
       console.error('\x1b[40m\x1b[31m\x1b[1m', exception.message);
     }
   }
-};
-
-export const getPreloadedState = (): ILocalStorageData => {
-  try {
-    const localStorageData: Nullable<string> = localStorage.getItem(LOCAL_STORAGE_SAVE_NAME);
-    if (!localStorageData) {
-      return {
-        something: 'something',
-      };
-    } else {
-      const { something } = JSON.parse(localStorageData) as ILocalStorageData;
-      return {
-        something,
-      };
-    }
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-interface IQueryParamData {
-  key: string;
-  value: string;
-}
-
-export const generateUrlQueryParams = (...queryParams: Array<IQueryParamData>) => {
-  if (!queryParams.length) {
-    throw new Error('Please provide a query params');
-  }
-  const queryParamsString = new URLSearchParams();
-  queryParams.forEach((queryParam) => {
-    const { key, value } = queryParam;
-    queryParamsString.set(key, value);
-  });
-  return `?${queryParamsString}`;
 };
