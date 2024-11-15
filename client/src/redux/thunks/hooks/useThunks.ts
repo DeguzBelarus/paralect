@@ -24,7 +24,7 @@ export const useThunks = () => {
   const updateOneReply = () => {
     if (!currentlyEditingReply) return;
     const { _id } = currentlyEditingReply;
-    dispatch(updateOneReplyAsync({ _id, dto: currentlyEditingReply }))
+    dispatch(updateOneReplyAsync({ _id, dto: currentlyEditingReply }));
   };
   const deleteOneReply = (_id: string) => dispatch(deleteOneReplyAsync({ _id }));
   return { getAllReplies, createOneReply, updateOneReply, deleteOneReply };
