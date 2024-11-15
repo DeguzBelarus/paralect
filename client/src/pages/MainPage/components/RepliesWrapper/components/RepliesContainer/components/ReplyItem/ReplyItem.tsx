@@ -30,7 +30,7 @@ export const ReplyItem: FC<Props> = ({ mode, data = {} }) => {
     >
       <ReplyItemCell mode={mode} type="company" value={company} />
       <ReplyItemCell mode={mode} type="position" value={position} />
-      <ReplyItemCell mode={mode} type="fork" value={String(salaryFork)} />
+      <ReplyItemCell mode={mode} type="fork" value={`${salaryFork}$`} />
       <ReplyItemCell mode={mode} type="status" value={status} />
       <ReplyItemCell mode={mode} type="note" value={note} />
     </div>
