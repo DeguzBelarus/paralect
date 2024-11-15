@@ -22,46 +22,46 @@ This full-stack application uses MNRN stack (MongoDB + NestJS + React.js + Node.
 - Back-end: https://paralect-server-production.up.railway.app/api/
 ```
 
-## Instructions
+## Instructions for using the project
 
-1 Clone the front-end repository:
+- 1 Clone the front-end repository:
 
 ```bash
 git clone https://github.com/DeguzBelarus/paralect.git
 ```
 
-2 Move to the project's directory:
+- 2 Move to the project's directory:
 
 ```bash
 cd paralect
 ```
 
-3 Clone the server repository:
+- 3 Clone the server repository:
 
 ```bash
 git clone https://github.com/DeguzBelarus/paralect-server.git
 ```
 
-4 Install the necessary modules:
+- 4 Install the necessary modules:
 
 ```bash
 npm run install:modules
 ```
 
-5 Go to the paralect-server directory and create .env file with following content (for accessing the MongoDB database):
+- 5 Go to the paralect-server directory and create .env file with following content (for accessing the MongoDB database):
 
 ```bash
 db_user_name=paralect
 db_user_password=1DSqAfcaXQk9HYY9
 ```
 
-5 Run the project in development mode:
+- 6 Run the project in development mode:
 
 ```bash
 npm run development
 ```
 
-6 Enjoy :)
+- 7 Enjoy :)
 
 ## Server APIs description
 
