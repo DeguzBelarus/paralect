@@ -66,10 +66,10 @@ npm run development
 ## Server APIs description
 
 ```bash
-- GET https://paralect-server-production.up.railway.app/api/reply;
-- POST https://paralect-server-production.up.railway.app/api/reply;
-- PUT https://paralect-server-production.up.railway.app/api/reply/update/:replyId;
-- DELETE https://paralect-server-production.up.railway.app/api/reply/delete/:replyId;
+- GET https://paralect-server-production.up.railway.app/api/reply
+- POST https://paralect-server-production.up.railway.app/api/reply
+- PUT https://paralect-server-production.up.railway.app/api/reply/update/:replyId
+- DELETE https://paralect-server-production.up.railway.app/api/reply/delete/:replyId
 
 dto interface (create and update):
   status: ReplyStatusType;
