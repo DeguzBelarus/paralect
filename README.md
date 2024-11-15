@@ -88,6 +88,13 @@ dto interface (create and update):
   type ReplyStatusType = 'accepted' | 'refused' | 'waiting'
 ```
 
+## Usage Tips
+
+```text
+- for editing: click on the chosen reply row and edit the data, then click on the "Update" button;
+- for deletion: click on the red button (in the right corner) of the chosen reply row.
+```
+
 ## Scripts description (optional)
 
 ```bash
