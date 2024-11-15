@@ -1,1 +1,1 @@
-export const REPLY_NOTE_MAXIMUM_LENGTH = 255;
+export const REPLY_NOTE_MAXIMUM_LENGTH = 50;

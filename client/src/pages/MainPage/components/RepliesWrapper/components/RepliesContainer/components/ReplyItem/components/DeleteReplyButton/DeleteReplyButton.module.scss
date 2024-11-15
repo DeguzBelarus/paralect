@@ -25,6 +25,7 @@
   &.disabled {
     color: $secondary-text-color;
     border: 1px solid $secondary-text-color;
-    opacity: 0.5;
+    background-color: transparent;
+    opacity: 0.2;
   }
 }

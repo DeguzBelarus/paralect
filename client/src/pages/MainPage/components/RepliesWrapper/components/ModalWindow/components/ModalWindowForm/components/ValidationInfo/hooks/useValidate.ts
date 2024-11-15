@@ -28,11 +28,11 @@ export const useValidate = () => {
     if (!position) {
       return 'The position name must be specified';
     }
+    if (note && note.length > REPLY_NOTE_MAXIMUM_LENGTH) {
+      return `The note cannot be longer than ${REPLY_NOTE_MAXIMUM_LENGTH} characters`;
+    }
     if (!Number(salaryFork)) {
       return 'It is necessary to specify the size of the salary fork';
-    }
-    if (note && note.length > REPLY_NOTE_MAXIMUM_LENGTH) {
-      return 'The note cannot be longer than 255 characters';
     }
   })();
   useEffect(() => {

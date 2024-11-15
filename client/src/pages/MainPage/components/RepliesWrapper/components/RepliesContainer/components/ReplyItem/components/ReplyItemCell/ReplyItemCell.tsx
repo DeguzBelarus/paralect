@@ -29,7 +29,7 @@ export const ReplyItemCell: FC<Props> = ({ type, value, mode }) => {
         [styles.note]: isNoteCell,
       })}
     >
-      <span>{displayingValue}</span>
+      <p>{displayingValue}</p>
     </div>
   );
 };
