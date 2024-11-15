@@ -1,14 +1,19 @@
 @use "../../../../../../../../../../styles/"as *;
 
 .DeleteReplyButton {
+  height: 100%;
   @include flex-all-center;
   @include hover-cursor-pointer;
-  
+
+  @include hover {
+    background-color: rgba($color: $negative-color, $alpha: 0.9);
+  }
+
   & {
     @include user-select-none;
     position: absolute;
     right: 0;
-    padding: 5px;
+    padding-inline: 5px;
     border-top-left-radius: 6px;
     color: $text-color;
     border: 1px solid $negative-color;
@@ -17,10 +22,6 @@
 
     font-size: 14px;
     transition: background-color 0.3s linear;
-  }
-
-  @include hover {
-    background-color: rgba($color: $negative-color, $alpha: 0.9);
   }
 
   &.disabled {
