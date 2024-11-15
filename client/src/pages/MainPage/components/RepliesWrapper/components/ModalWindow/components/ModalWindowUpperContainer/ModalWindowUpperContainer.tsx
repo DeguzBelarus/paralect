@@ -9,7 +9,7 @@ interface Props {
 
 export const ModalWindowUpperContainer: FC<Props> = memo(({ isModalInEditingMode }) => {
   const modalWindowHeadingText = isModalInEditingMode
-    ? 'Editing of a reply'
+    ? 'Editing of the reply'
     : 'Creation of a reply';
   return (
     <div className={styles.ModalWindowUpperContainer}>

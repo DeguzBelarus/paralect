@@ -1,0 +1,27 @@
+@use "../../../../../../../../../../styles/"as *;
+
+.ReplyItemCell {
+  height: 100%;
+  @include flex-all-center;
+  @include user-select-none;
+
+  &.company {
+    width: 25%;
+  }
+
+  &.position {
+    width: 25%;
+  }
+
+  &.salary {
+    width: 10%;
+  }
+
+  &.status {
+    width: 10%;
+  }
+
+  &.note {
+    width: 25%;
+  }
+}
