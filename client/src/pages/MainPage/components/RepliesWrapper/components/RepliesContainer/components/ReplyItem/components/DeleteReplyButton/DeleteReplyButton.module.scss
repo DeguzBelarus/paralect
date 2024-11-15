@@ -5,12 +5,11 @@
   position: absolute;
   right: 0;
   @include hover-cursor-pointer;
-  transition: background-color 0.3s linear;
-
+  
   @include hover {
     background-color: rgba($color: $negative-color, $alpha: 0.2);
   }
-
+  
   & {
     padding-inline: 10px;
     border-top-left-radius: 6px;
@@ -18,6 +17,7 @@
     border: 1px solid $negative-color;
     border-bottom-left-radius: 6px;
     font-size: 14px;
+    transition: background-color 0.3s linear;
   }
 
   &.disabled {

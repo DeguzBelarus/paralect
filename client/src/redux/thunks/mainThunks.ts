@@ -51,7 +51,7 @@ export const updateOneReplyAsync = createAsyncThunk(
     const { _id, dto: updateOneReplyDto } = requestData;
     const updateOneReplyResponse: Undefinable<Response> = await universalFetch(
       `${UPDATE_ONE_REPLY_URL(_id)}`,
-      RequestRESTMethodsEnum.POST,
+      RequestRESTMethodsEnum.PUT,
       JSON.stringify(updateOneReplyDto),
     );
     if (updateOneReplyResponse) {
