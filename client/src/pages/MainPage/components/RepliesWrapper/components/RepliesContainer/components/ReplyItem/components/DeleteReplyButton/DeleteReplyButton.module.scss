@@ -3,12 +3,12 @@
 .DeleteReplyButton {
   @include flex-all-center;
   @include hover-cursor-pointer;
-  @include user-select-none;
-  position: absolute;
-  right: 0;
-
+  
   & {
-    padding: 5px 10px;
+    @include user-select-none;
+    position: absolute;
+    right: 0;
+    padding: 5px;
     border-top-left-radius: 6px;
     color: $text-color;
     border: 1px solid $negative-color;
