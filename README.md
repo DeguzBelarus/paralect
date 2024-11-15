@@ -22,6 +22,13 @@ This full-stack application uses MNRN stack (MongoDB + NestJS + React.js + Node.
 - Back-end: https://paralect-server-production.up.railway.app/api/ - Railway
 ```
 
+## Repositories
+
+```bash
+- Front-end: https://github.com/DeguzBelarus/paralect/ - current
+- Back-end: https://github.com/DeguzBelarus/paralect-server/
+```
+
 ## Instructions for using the project
 
 - 1 Clone the front-end repository:
