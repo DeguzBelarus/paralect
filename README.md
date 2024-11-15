@@ -43,7 +43,7 @@ git clone https://github.com/DeguzBelarus/paralect.git
 cd paralect
 ```
 
-- 3 Clone the server repository:
+- 3 Clone the server repository (from the root directory of the project!):
 
 ```bash
 git clone https://github.com/DeguzBelarus/paralect-server.git
