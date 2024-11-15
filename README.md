@@ -18,8 +18,8 @@ This full-stack application uses MNRN stack (MongoDB + NestJS + React.js + Node.
 ## Deploys
 
 ```bash
-- Front-end: https://paralect-app.netlify.app/
-- Back-end: https://paralect-server-production.up.railway.app/api/
+- Front-end: https://paralect-app.netlify.app/ - Netlify
+- Back-end: https://paralect-server-production.up.railway.app/api/ - Railway
 ```
 
 ## Instructions for using the project
