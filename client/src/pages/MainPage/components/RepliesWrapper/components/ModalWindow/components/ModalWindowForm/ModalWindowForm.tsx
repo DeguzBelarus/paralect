@@ -15,6 +15,7 @@ export const ModalWindowForm: FC = () => {
   const formSubmitHandler = (event: FormEvent) => {
     event.preventDefault();
     !isModalInEditingMode && createOneReply();
+    isModalInEditingMode && updateOneReply();
   };
   return (
     <form className={styles.ModalWindowForm} onSubmit={formSubmitHandler}>

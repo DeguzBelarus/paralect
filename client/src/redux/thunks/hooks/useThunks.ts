@@ -21,8 +21,11 @@ export const useThunks = () => {
     const payload = result.payload as IRepliesResponseData;
     payload && payload?.data && closeModalWindow();
   };
-  const updateOneReply = (_id: string) =>
-    dispatch(updateOneReplyAsync({ _id, dto: currentlyEditingReply }));
+  const updateOneReply = () => {
+    if (!currentlyEditingReply) return;
+    const { _id } = currentlyEditingReply;
+    dispatch(updateOneReplyAsync({ _id, dto: currentlyEditingReply }))
+  };
   const deleteOneReply = (_id: string) => dispatch(deleteOneReplyAsync({ _id }));
   return { getAllReplies, createOneReply, updateOneReply, deleteOneReply };
 };
