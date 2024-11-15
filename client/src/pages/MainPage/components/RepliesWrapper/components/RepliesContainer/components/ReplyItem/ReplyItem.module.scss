@@ -9,9 +9,12 @@
 
   &.row {
     @include hover-cursor-pointer;
-    font-weight: normal;
-    border: 1px solid $accents-theme-color;
-    transition: background-color 0.3s linear;
+
+    & {
+      font-weight: normal;
+      border: 1px solid $accents-theme-color;
+      transition: background-color 0.3s linear;
+    }
 
     @include hover {
       background-color: rgba($color: $secondary-text-color, $alpha: 0.2);
